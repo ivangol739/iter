@@ -131,9 +131,9 @@ def myrange(start, end):
 
 
 l_c = [i * i for i in range(20) if i % 2 != 0]
-# print(l_c)
+print(l_c)
 
 generator_ = (i * i for i in range(20) if i % 2 != 0)
-# for num in generator_:
-# 	print(num)
+for num in generator_:
+	print(num)
 

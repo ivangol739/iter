@@ -3,7 +3,7 @@ from time import sleep
 
 class FlatIterator:
   def __init__(self, list_of_list):
-    self.list_of_list = [a for b in list_of_list for a in b]
+    self.list_of_list = [item for sublist in list_of_list for item in sublist]
 
   def __iter__(self):
     self.cursor = -1
